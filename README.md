@@ -1,4 +1,6 @@
-devsoc 2026 technical assessment - frontend!
+# devsoc 2026 technical assessment - frontend!
+
+access the website here https://disarrayx.github.io/2026-devsoc-frontend/
 
 stretch task 1 and 2 complete :)
 

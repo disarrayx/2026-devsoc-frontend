@@ -1,1 +1,3 @@
 https://github.com/devsoc-unsw/2026-recruitment-technical-assessment
+
+website is deployed here: https://disarrayx.github.io/2026-devsoc-frontend/
