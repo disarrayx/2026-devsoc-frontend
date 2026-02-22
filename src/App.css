@@ -1,0 +1,73 @@
+/* ==== room filter section ==== */
+.room-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: var(--gap-lg);
+}
+
+.filter-search {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+
+    gap: var(--gap-sm);
+    border: var(--border-size-sm) solid var(--accent);
+    border-radius: var(--border-radius-md);
+    padding: var(--padding-sm) var(--padding-lg);
+
+    color: var(--accent);
+    font: var(--p1);
+}
+
+.room-searchbar {
+    border: var(--border-size-sm) solid var(--secondary-weak);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-md);
+    padding: var(--padding-sm) var(--padding-lg);
+    width: 400px;
+
+    box-sizing: border-box;
+    
+    & svg {
+        color: var(--secondary-strong);
+    }
+
+    transition: border-color 500ms;
+}
+
+.room-searchbar:has(#room-searchbar-input:focus-visible) {
+    border-color: var(--accent);
+}
+
+#room-searchbar-input {
+    border: none;
+    width: 100%;
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+/* stretch task 2 */
+@media screen and (max-width: 685px) {
+    .room-filter {
+        flex-wrap: wrap;
+    }
+    /* technically flex order is not good for accessibility and shouldnt be used in prod but i got lazy */
+    .room-searchbar {
+        order: 1;
+        min-width: 100%;
+    }
+    .filter-search {
+        order: 2;
+    }
+}
+
+

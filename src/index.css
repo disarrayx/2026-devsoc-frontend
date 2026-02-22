@@ -1,0 +1,59 @@
+:root {
+  --bg: #FFFFFF;
+  --text: #000000;
+  --secondary-strong: #807F80;
+  --secondary-weak: #E6E6E6;
+  --accent: #EF7021;
+  --confirm: #4CAE55;
+
+  --border-size-sm: 1px;
+  --border-size-md: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --padding-xs: 2px;
+  --padding-sm: 4px;
+  --padding-md: 8px;
+  --padding-lg: 16px;
+  --padding-xl: 32px;
+  --gap-sm: 4px;
+  --gap-md: 8px;
+  --gap-lg: 16px;
+
+  --font: "Roboto", "Helvetica", "Arial", sans-serif;
+  --logo: bold 1.125rem var(--font);
+  --logo-spacing: 0.05rem;
+  --p0: 1.125rem var(--font);
+  --p1: 1rem var(--font);
+  --p2: 0.875rem var(--font);
+
+  --icon-size: 48px;
+  --dot-size: 8px;
+  --nav-height: 90px;
+
+  --card-height-desktop: 300px;
+  --card-height-mobile: 150px;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: var(--font);
+}
+
+p {
+  font: var(--p1);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+#main {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  padding: var(--padding-lg);
+}
